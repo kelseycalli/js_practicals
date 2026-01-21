@@ -31,3 +31,8 @@ decrementButton.addEventListener('click', function (event) {
     }
 });
 
+// Task 3
+
+const alertMessage = document.querySelector('#alert-box');
+
+alertMessage.classList.toggle('d-none');
