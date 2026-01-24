@@ -1,3 +1,4 @@
+// Phase 1
 // Task 1
 const clickMe = document.querySelector('#primary-action-btn');
 let clicked = false;
@@ -36,3 +37,24 @@ decrementButton.addEventListener('click', function (event) {
 const alertMessage = document.querySelector('#alert-box');
 
 alertMessage.classList.toggle('d-none');
+
+// Phase 2
+// Task 4 & 5
+
+const viewBtn1 = document.querySelector('button[data-view="one"]');
+const viewBtn2 = document.querySelector('button[data-view="two"]');
+const viewOutput = document.querySelector('#view-output');
+
+viewBtn1.addEventListener('click', function (event) {
+    viewBtn1.classList.add('active');
+    viewBtn2.classList.remove('active');
+    viewOutput.textContent = 'You have selected View One.';
+});
+viewBtn2.addEventListener('click', function (event) {
+    viewBtn2.classList.add('active');
+    viewBtn1.classList.remove('active');
+    viewOutput.textContent = 'You have selected View Two.';
+});
+
+
+
